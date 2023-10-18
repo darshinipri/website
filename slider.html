@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slider.css">
+</head>
+<body>
+    <div class="hero" style="background-color: black;">
+        <h1>Testimonials</h1>
+      
+        <div class="container">
+            <div class="indicator">
+                <span class="btn active" ></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+                <span class="btn"></span>
+            </div>
+            <div class="testimonial">
+        <div class="slide-row" id="slide">
+            <div class="slide-col">
+                <div class="user-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis possimus, corporis quo, explicabo voluptatibus est debitis suscipit vero, quas porro quidem? Delectus at quam 
+                        dolor quod nostrum ipsa consequatur beatae!</p>
+                        <h3>some data</h3>
+                        <p>some data</p>
+                </div>
+                <div class="user-img">
+                    <img src="images/hw.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide-col">
+                <div class="user-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis possimus, corporis quo, explicabo voluptatibus est debitis suscipit vero, quas porro quidem? Delectus at quam 
+                        dolor quod nostrum ipsa consequatur beatae!</p>
+                        <h3>some data</h3>
+                        <p>some data</p>
+                </div>
+                <div class="user-img">
+                    <img src="images/hw.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide-col">
+                <div class="user-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis possimus, corporis quo, explicabo voluptatibus est debitis suscipit vero, quas porro quidem? Delectus at quam 
+                        dolor quod nostrum ipsa consequatur beatae!</p>
+                        <h3>some data</h3>
+                        <p>some data</p>
+                </div>
+                <div class="user-img">
+                    <img src="images/hw.jpg" alt="">
+                </div>
+            </div>
+            <div class="slide-col">
+                <div class="user-text">
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis possimus, corporis quo, explicabo voluptatibus est debitis suscipit vero, quas porro quidem? Delectus at quam 
+                        dolor quod nostrum ipsa consequatur beatae!</p>
+                        <h3>some data</h3>
+                        <p>some data</p>
+                </div>
+                <div class="user-img">
+                    <img src="images/hw.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        var btn = document.getElementsByClassName("btn");
+        var slide = document.getElementById("slide")
+
+        btn[0].onclick =function(){
+            
+            slide.style.transform = "translateX(0px)"
+            for (let i = 0; i < 4; i++) {
+                btn[i].classList.remove("active");
+                
+            }
+            this.classList.add("active");
+        }
+        
+        btn[1].onclick =function(){
+            slide.style.transform = "translateX(-800px)"
+            for (let i = 0; i < 4; i++) {
+                btn[i].classList.remove("active");
+                
+            }
+            this.classList.add("active");
+        }
+        
+        btn[2].onclick =function(){
+            slide.style.transform = "translateX(-1600px)"
+            for (let i = 0; i < 4; i++) {
+                btn[i].classList.remove("active");
+                
+            }
+            this.classList.add("active");
+        }
+        
+        btn[3].onclick =function(){
+            slide.style.transform = "translateX(-2400px)"
+            for (let i = 0; i < 4; i++) {
+                btn[i].classList.remove("active");
+                
+            }
+            this.classList.add("active");
+        }
+    </script>
+</body>
+</html>
