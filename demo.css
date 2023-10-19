@@ -58,10 +58,10 @@ ul li a {
     display: block;
     text-decoration: none;
     text-align: center;
-    /* font-size: 20px; */
+   
     color: var(--hover-color);
     font-weight: 500px;
-    /* padding: 10px 10px; */
+  
     animation: slideAnimation 1s ease forwards;
     animation-delay: calc(.3s * var(--i));
     opacity: 0 ;
@@ -72,7 +72,7 @@ ul li a {
 ul li ul.dropdown li {
     position: relative;
     width: 18rem;
-    /* border-radius: 15px; */
+ 
     overflow: hidden;
     background: #292e33;
     display: flex;
@@ -94,7 +94,7 @@ ul li ul.dropdown {
     position: absolute;
     z-index: 999;
     display: none;
-    box-shadow: var(--neon-box-shadow);
+    /* box-shadow: var(--neon-box-shadow); */
 
 }
 
@@ -987,6 +987,10 @@ footer a i{
     .navlist a{
         padding: 8px 15px;
     }
+    .home-content{
+        margin-top: 3rem;
+    }
+   
     :root{
         
         --big-font:2.2rem;
@@ -1036,6 +1040,15 @@ footer a i{
     .home{
         grid-template-columns: 1fr;
     }
+    .home-content{
+        margin-top: 6rem;
+    }
+    .social-icons{
+        margin-top: 3.5rem;
+    }
+    .home-image{
+      margin-top: -5rem;
+    }
     .home-image{
         margin-bottom: 5rem;
     }
@@ -1062,6 +1075,58 @@ footer a i{
     html{
         font-size: 80%;
     }
+    .home-content{
+        margin-top: 10rem;
+    }
+    .social-icons{
+        margin-top: 4rem;
+    }
+    .home-image{
+      margin-top: -3rem;
+    }
+    #menu-icon{
+        
+        display: block;
+        transition: all .2s ease;
+    }
+    #menu-icon.bx-x{
+        transform: rotate(-180deg);
+    }
+    .navlist{
+        display: flex;
+        position: absolute;
+        top: -1000%;
+        right: 0;
+        left: 0;
+        flex-direction: column;
+        background: var(--bg-color);
+        padding: 0.5%;
+        transition: all .45s ease;
+        text-align: left;
+    }
+    ul li a {
+        display: block;
+        text-decoration: none;
+        text-align: center;
+       width: 10rem;
+        color: var(--hover-color);
+        font-weight: 500px;
+      
+        animation: slideAnimation 1s ease forwards;
+        animation-delay: calc(.3s * var(--i));
+        opacity: 0 ;
+    }
+
+    .navlist a{
+        display: block;
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+    .navlist.open{
+        top: 100%;
+
+    }
+
     footer p{
         font-size: 0.6rem;
 
