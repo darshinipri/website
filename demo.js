@@ -118,7 +118,7 @@ scrollTop.forEach((el) => observer.observe(el));
 var btnT = document.getElementsByClassName("btnT");
 var slide = document.getElementById("slide")
 
-btnTest[0].onclick = function () {
+btnT[0].onclick = function () {
 
     slide.style.transform = "translateX(0px)"
     for (let i = 0; i < 4; i++) {
@@ -128,7 +128,7 @@ btnTest[0].onclick = function () {
     this.classList.add("active");
 }
 
-btnTest[1].onclick = function () {
+btnT[1].onclick = function () {
     slide.style.transform = "translateX(-800px)"
     for (let i = 0; i < 4; i++) {
         btnT[i].classList.remove("active");

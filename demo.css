@@ -47,6 +47,72 @@ body{
     width: 3rem;
 }
 
+ul li {
+    display: inline-block;
+    position: relative;
+
+ 
+}
+
+ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    /* font-size: 20px; */
+    color: var(--hover-color);
+    font-weight: 500px;
+    /* padding: 10px 10px; */
+    animation: slideAnimation 1s ease forwards;
+    animation-delay: calc(.3s * var(--i));
+    opacity: 0 ;
+}
+
+
+
+ul li ul.dropdown li {
+    position: relative;
+    width: 18rem;
+    /* border-radius: 15px; */
+    overflow: hidden;
+    background: #292e33;
+    display: flex;
+    grid-template-rows: 12fr auto;
+    align-items: center;
+    border: 2px solid var(--hover-color);
+
+    /* box-shadow: var(--neon-box-shadow); */
+    display: block;
+    background: var(--bg-color);
+    
+  
+    
+}
+
+ul li ul.dropdown {
+    width: 100%;
+    color: #250821;
+    position: absolute;
+    z-index: 999;
+    display: none;
+    box-shadow: var(--neon-box-shadow);
+
+}
+
+ul li a:hover {
+    color: var(--hover-color);
+    text-shadow: 0 0 10px rgba(18, 247,255, 0.6),
+    0 0 10px rgba(18, 247,255, 0.6),
+    0 0 10px rgba(18, 247,255, 0.6),
+    0 0 10px rgba(18, 247,255, 0.6),
+    0 0 10px rgba(18, 247,255, 0.6),
+    0 0 10px rgba(18, 247,255, 0.6),
+    0 0 10px rgba(18, 247,255, 0.6);
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+}
+
 header{
     position: fixed;
     top: 0;
@@ -948,13 +1014,14 @@ footer a i{
     .navlist{
         display: flex;
         position: absolute;
-        top: 100%;
+        top: -1000%;
         right: 0;
         left: 0;
         flex-direction: column;
         background: var(--bg-color);
-        padding: 0 5%;
+        padding: 0.5%;
         transition: all .45s ease;
+        text-align: left;
     }
 
     .navlist a{
