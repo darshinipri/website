@@ -1236,7 +1236,7 @@ footer a i{
     }
 }
 
-@media only screen and (max-width:320px){
+@media only screen and (max-width:390px){
     html{
         font-size: 60%;
     }
@@ -1267,4 +1267,33 @@ footer a i{
         border-radius: 3px;
         color: var(--secon-bg-color);
     }
+    .navlist a{
+        display:block;
+        color: var(--text-color);
+        font-weight: 500px;
+        padding: 10px 20px;
+        animation: slideAnimation 1s ease forwards;
+        animation-delay: calc(.3s * var(--i));
+        opacity: 0 ;
+    }
+      
+    ul li ul.dropdown li {
+        position: relative;
+        width: 18rem;
+     
+        overflow: hidden;
+        background: #292e33;
+        display: flex;
+        grid-template-rows: 12fr auto;
+        align-items: center;
+        border: 2px solid var(--hover-color);
+    
+        /* box-shadow: var(--neon-box-shadow); */
+        display: block;
+        background: var(--bg-color);
+        
+      
+        
+    }
+    
 }
