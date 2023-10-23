@@ -1090,6 +1090,15 @@ footer a i{
     section {
         padding: 10px;
     }
+    #about{
+        margin-top: 10rem;
+    }
+    #about p{
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+
+    }
 }
 @media only screen and (max-width:420px){
     html{
@@ -1296,6 +1305,15 @@ footer a i{
         
       
         
+    }
+    #about{
+        margin-top: 10rem;
+    }
+    #about p{
+        align-items: center;
+        justify-content: center;
+        font-weight: 500;
+
     }
     
 }
