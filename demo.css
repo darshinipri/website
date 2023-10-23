@@ -1235,3 +1235,36 @@ footer a i{
 
     }
 }
+
+@media only screen and (max-width:320px){
+    html{
+        font-size: 60%;
+    }
+    .home-content{
+        margin-top: 12rem;
+    }
+    .social-icons{
+        margin-top: 4rem;
+    }
+    .home-image{
+      margin-top: -3rem;
+    }
+   
+    #menu-icon.bx-x{
+        transform: rotate(-180deg);
+    }
+    .header{
+        justify-content: space-between;
+    }
+    #menu-icon{
+        display: block;
+        transition: all .4s ease;
+        font-size: 1.8rem;
+        z-index: 10001;
+        cursor: pointer;
+        margin-right:7rem;
+        background: var(--hover-color);
+        border-radius: 3px;
+        color: var(--secon-bg-color);
+    }
+}
