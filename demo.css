@@ -113,7 +113,8 @@ ul li a:hover {
 
 ul li:hover ul.dropdown {
     display: block;
-}
+} 
+
 
 header{
     position: fixed;
@@ -1091,7 +1092,7 @@ footer a i{
         padding: 10px;
     }
     #about{
-        margin-top: 10rem;
+        margin-top: 12rem;
     }
     #about p{
         align-items: center;
@@ -1237,7 +1238,7 @@ footer a i{
         font-size: 1rem;
     }
     #about{
-        margin-top: 10rem;
+        margin-top: 15rem;
     }
     #about p{
         align-items: center;
@@ -1307,7 +1308,7 @@ footer a i{
         
     }
     #about{
-        margin-top: 10rem;
+        margin-top: 17rem;
     }
     #about p{
         align-items: center;
