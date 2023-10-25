@@ -154,3 +154,33 @@ btnT[3].onclick = function () {
     }
     this.classList.add("active");
 }
+
+function toggleDropdown() {
+    var dropdown = document.getElementById("dropdown");
+    if (dropdown.style.display === "none" || dropdown.style.display === "") {
+        dropdown.style.display = "block";
+    } else {
+        dropdown.style.display = "none";
+    }
+}
+const dropdown = document.getElementById("dropdown");
+ 
+  element.addEventListener("click", function() {
+    if (dropdown.style.display === "none" || dropdown.style.display === "") {
+        dropdown.style.display = "block";
+    } else {
+        dropdown.style.display = "none";
+    }
+  
+  });
+
+
+  element.addEventListener("mouseover", function() {
+    if (dropdown.style.display === "none" || dropdown.style.display === "") {
+        dropdown.style.display = "block";
+    } else {
+        dropdown.style.display = "none";
+    }
+  
+  });
+
