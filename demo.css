@@ -1012,3 +1012,48 @@ footer a i{
         font-size: 1rem;
     }
 }
+/* OUR SERVICES CSS */
+
+.our-services{
+background-color: navy;
+padding-left: 150px;
+padding-right: 100px;
+padding-top: 50px;
+}
+.image-text {
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* text-align: center; */
+}
+
+/* .image-text img {
+    max-width: 100%; /* Set a maximum width for the image */
+    /* height: auto; */
+/* } */ */
+
+.image-text a {
+    /* margin-top: auto; This pushes the text to the bottom */
+}
+
+
+.bg_header1 {
+    background-image: url(https://www.astrogautam.com/img/banner_im.png);
+}
+.page_title.has_bg_image {
+    padding: 50px 0;
+}
+.page_title {
+    border-bottom: 4px solid #fff;
+    box-shadow: 0 0 4px rgba(0,0,0,0.17);
+    -moz-box-shadow: 0 0 4px rgba(0,0,0,0.17);
+    -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.17);
+    -ms-box-shadow: 0 0 4px rgba(0,0,0,0.17);
+    -o-box-shadow: 0 0 4px rgba(0,0,0,0.17);
+    position: relative;
+    z-index: 1;
+}
+.white_section {
+    color: rgba(255,255,255,0.7);
+    /* background: #42484d; */
+}
