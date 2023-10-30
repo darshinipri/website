@@ -115,72 +115,120 @@ const scrollTop = document.querySelectorAll(".scroll-top");
 scrollTop.forEach((el) => observer.observe(el));
 
 // testimonial
-var btnT = document.getElementsByClassName("btnT");
-var slide = document.getElementById("slide")
+// var btnT = document.getElementsByClassName("btnT");
+// var slide = document.getElementById("slide")
 
-btnT[0].onclick = function () {
+// btnT[0].onclick = function () {
 
-    slide.style.transform = "translateX(0px)"
-    for (let i = 0; i < 4; i++) {
-        btnT[i].classList.remove("active");
+//     slide.style.transform = "translateX(0px)"
+//     for (let i = 0; i < 4; i++) {
+//         btnT[i].classList.remove("active");
 
-    }
-    this.classList.add("active");
-}
+//     }
+//     this.classList.add("active");
+// }
 
-btnT[1].onclick = function () {
-    slide.style.transform = "translateX(-800px)"
-    for (let i = 0; i < 4; i++) {
-        btnT[i].classList.remove("active");
+// btnT[1].onclick = function () {
+//     slide.style.transform = "translateX(-800px)"
+//     for (let i = 0; i < 4; i++) {
+//         btnT[i].classList.remove("active");
 
-    }
-    this.classList.add("active");
-}
+//     }
+//     this.classList.add("active");
+// }
 
-btnT[2].onclick = function () {
-    slide.style.transform = "translateX(-1600px)"
-    for (let i = 0; i < 4; i++) {
-        btnT[i].classList.remove("active");
+// btnT[2].onclick = function () {
+//     slide.style.transform = "translateX(-1600px)"
+//     for (let i = 0; i < 4; i++) {
+//         btnT[i].classList.remove("active");
 
-    }
-    this.classList.add("active");
-}
+//     }
+//     this.classList.add("active");
+// }
 
-btnT[3].onclick = function () {
-    slide.style.transform = "translateX(-2400px)"
-    for (let i = 0; i < 4; i++) {
-        btnT[i].classList.remove("active");
+// btnT[3].onclick = function () {
+//     slide.style.transform = "translateX(-2400px)"
+//     for (let i = 0; i < 4; i++) {
+//         btnT[i].classList.remove("active");
 
-    }
-    this.classList.add("active");
-}
+//     }
+//     this.classList.add("active");
+// }
+// 
 
-function toggleDropdown() {
-    var dropdown = document.getElementById("dropdown");
-    if (dropdown.style.display === "none" || dropdown.style.display === "") {
-        dropdown.style.display = "block";
-    } else {
-        dropdown.style.display = "none";
-    }
-}
-const dropdown = document.getElementById("dropdown");
+
+
+// dropdown
+
+
+(() =>{
  
-  element.addEventListener("click", function() {
-    if (dropdown.style.display === "none" || dropdown.style.display === "") {
-        dropdown.style.display = "block";
-    } else {
-        dropdown.style.display = "none";
+    const openNavMenu = document.querySelector(".open-nav-menu"),
+    closeNavMenu = document.querySelector(".close-nav-menu"),
+    navMenu = document.querySelector(".nav-menu"),
+    menuOverlay = document.querySelector(".menu-overlay"),
+    mediaSize = 991;
+  
+    openNavMenu.addEventListener("click", toggleNav);
+    closeNavMenu.addEventListener("click", toggleNav);
+    // close the navMenu by clicking outside
+    menuOverlay.addEventListener("click", toggleNav);
+  
+    function toggleNav() {
+        navMenu.classList.toggle("open");
+        menuOverlay.classList.toggle("active");
+        document.body.classList.toggle("hidden-scrolling");
     }
   
-  });
-
-
-  element.addEventListener("mouseover", function() {
-    if (dropdown.style.display === "none" || dropdown.style.display === "") {
-        dropdown.style.display = "block";
-    } else {
-        dropdown.style.display = "none";
+    navMenu.addEventListener("click", (event) =>{
+        if(event.target.hasAttribute("data-toggle") && 
+            window.innerWidth <= mediaSize){
+            // prevent default anchor click behavior
+            event.preventDefault();
+            const menuItemHasChildren = event.target.parentElement;
+          // if menuItemHasChildren is already expanded, collapse it
+          if(menuItemHasChildren.classList.contains("active")){
+              collapseSubMenu();
+          }
+          else{
+            // collapse existing expanded menuItemHasChildren
+            if(navMenu.querySelector(".menu-item-has-children.active")){
+              collapseSubMenu();
+            }
+            // expand new menuItemHasChildren
+            menuItemHasChildren.classList.add("active");
+            const subMenu = menuItemHasChildren.querySelector(".sub-menu");
+            subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+          }
+        }
+    });
+    function collapseSubMenu(){
+        navMenu.querySelector(".menu-item-has-children.active .sub-menu")
+        .removeAttribute("style");
+        navMenu.querySelector(".menu-item-has-children.active")
+        .classList.remove("active");
+    }
+    function resizeFix(){
+         // if navMenu is open ,close it
+         if(navMenu.classList.contains("open")){
+             toggleNav();
+         }
+         // if menuItemHasChildren is expanded , collapse it
+         if(navMenu.querySelector(".menu-item-has-children.active")){
+              collapseSubMenu();
+       }
     }
   
-  });
+    window.addEventListener("resize", function(){
+       if(this.innerWidth > mediaSize){
+           resizeFix();
+       }
+    });
+  
+  })();
+  
+  
+
+
+
 
