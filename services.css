@@ -1,0 +1,57 @@
+.country{
+    box-sizing: border-box;
+}
+
+
+.Countryserviceslist {
+    list-style: none;
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem; /* Adjust as needed */
+}
+
+.image-country {
+    margin-bottom: 20px; /* Adjust as needed */
+    box-sizing: border-box;
+    text-align: center;
+    
+}
+.image-country img {
+width: 6rem;
+ height: 50px; 
+ margin: 10px; 
+  }
+
+.image-container {
+    text-align: center;
+   
+}
+
+.image-container img {
+    /* max-width: 100%; Adjust the maximum width */
+    /* height: auto; To maintain the image's aspect ratio */
+  
+}
+
+.image-container a {
+    text-decoration: none;
+    display: block;
+}
+
+.countrytext{
+width: 25px;
+}
+/* You can add more styling if needed */
+.image-country {
+    position: relative;
+    /* overflow: hidden;  */
+}
+
+.countrytext {
+  max-width: 0.5rem!important;
+  text-overflow: ellipsis;
+ white-space: nowrap;
+ font-size: 17px;
+}

@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astrology</title>
-    <link rel="stylesheet" href="/website/demo.css">
-
+    <link rel="stylesheet" href="/demo.css">
+    <link rel="stylesheet" href="/services.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
@@ -23,28 +23,63 @@
 </style> -->
 <body>
   
+     
     <header class="sticky">
-       
-        <div class="logo-main"><span><img class="logo" src="/website/images/logo.jpg" alt="" srcset="">
-                <span>Astrologer Some Name</span>
+
+
+        <div class="logo-main"><span><img class="logo" src="/images/logo.jpg" alt="" srcset="">
+                <span style="display: inline-block;  vertical-align: bottom; line-height: 3.5;">Astrologer Some
+                    Name</span>
+
+                <!-- <div class="logo-main"><span><img class="logo" src="/images/logo.jpg" alt="" srcset="">
+            <span style="display: inline-block; vertical-align: bottom; line-height: 3.5;">Astrologer Some Name</span> -->
+
         </div>
         <ul class="navlist" id="navlist">
-            <li> <a href="#home" style="--i:1">Home</a></li>
-            <li> <a href="pages/aboutMore.html" style="--i:2">About</a></li>
-            <li> <a href="#portfolio" style="--i:3">Services</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Service 1</a></li>
-                    <li><a href="#">Service 2</a></li>
-                    <li><a href="#">Service 3</a></li>
-                </ul></li>
-            <li> <a href="#spiritualPrayers" style="--i:4">Spiritual Prayers</a></li>
-            <li> <a href="#astrologerLocation" style="--i:5">Astrologer Location</a></li>
-            <li> <a href="#appointment" style="--i:6"> Appointment</a></li>
-            <li> <a href="#contactus" style="--i:7"> Contact Us</a></li>
+            <li><a href="/index.html" style="--i:1">Home</a></li>
+            <li><a href="/pages/aboutMore.html" style="--i:2">About</a></li>
+            <li>
+                <a href="index.html#services" id="dropdown" onmousedown="toggleDropdown()" style="--i:3">Services ▾</a>
+                <ul class="dropdown">
+                    <li><a href="/pages/palmistry.html">Palmistry</a></li>
+                    <li><a href="/pages/lovespell.html">Love Spell</a></li>
+                    <li><a href="/pages/horoscrope.html">Horoscope</a></li>
+                    <li><a href="/pages/hwdispute.html">Husband & Wife Dispute</a></li>
+
+                    <li><a href="/pages/vastu.html">Vastu Shastra</a></li>
+                    <li><a href="/pages/bmremoval.html">Black-Magic Removal</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="dropdown" onmousedown="toggleDropdown()" style="--i:4">Spiritual Prayers ▾</a>
+                <ul class="dropdown">
+                    <li><a href="/pages/spritualhealing.html">Spiritual Healing</a></li>
+                    <li><a href="/pages/voodoo.html">Voodoo Prayers</a></li>
+                    <li><a href="/pages/JaiHanumanPuja.html">Jai Hanuman Puja</a></li>
+                    <li><a href="/pages/KaliMaaPuja.html">Kali Maa Puja</a></li>
+                    <li><a href="/pages/theGayatriMantra.html">The Gayatri Mantra</a></li>
+                    <li><a href="/pages/sanishathiyagna.html">Shani Shanthi Yagna</a></li>
+                    <li><a href="/pages/manglikShantiYagna.html">Manglik Shanthi Yagna</a></li>
+                    <li><a href="/pages/kaalSarpaShant Yagna.html">Kaal Sarpa Shanthi Yagna</a></li>
+                    <li><a href="/pages/mangalaGauriYagna.html">Mangala Gauri Yagna</a></li>
+                    <li><a href="/pages/personalRudrabhishekYagna.html">Personal Rudrabhishek Yagna</a></li>
+                    <li><a href="/pages/katyaaniyagna.html">Katyaani yagna</a></li>
+                    <li><a href="/pages/personalGanpatiYagna.html">Personal Ganpati Yagna</a></li>
+                    <li><a href="/pages/MahaMrityunjayaYagna.html">Maha Mrityunjaya Yagna</a></li>
+                    <li><a href="/pages/SantanGopalYagna.html">Santan Gopal Yagna</a></li>
+                </ul>
+            </li>
+            <li><a href="#about" id="dropdown" onmousedown="toggleDropdown()" style="--i:5">Astrologer Location ▾</a>
+                <ul class="dropdown">
+                    <li><a href="/pages/california.html">California</a></li>
+                    <li><a href="/pages/usa.html">USA</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#contactus" style="--i:6">Contact Us</a></li>
         </ul>
         <div id="menu-icon" class='bx bx-menu'></div>
     </header>
-    <section class="about-content">
+    <section class="about-content" id="home">
         <section class="content_section white_section page_title has_bg_image bg_header1 enar_parallax ">
           
 <h1>Astrologer In  Tanzania</h1>
@@ -53,32 +88,772 @@
 <br><br>
 <h2>Best and Famous Indian Astrologer in Tanzania</h2>
 <br>
-<p style="text-align:justify;">If you are plagued with distress and anxiety, and a growing sense of directionless feelings that cannot be logically explained, it is time to seek answers beyond reason and science. A detailed look at your horoscope may sort your life out. Astrologer Gautam, one of the best Indian astrologers, has begun his trade in Tanzania. His services pertaining to palmistry and spiritual reconnaissance are now easily accessible and his helpful insights regarding personal and professional lives involving your finances, career and love life, can contribute a lot in improving the general status of your life at present. With the help of Astrologer Gautam, you can find whatever astrological service you may need. Get tailor-made solutions today!</P>
+<p style="text-align:justify;">If you're grappling with distress, anxiety, and a pervasive sense of aimlessness that defies logical explanation, it may be time to seek answers that transcend reason and science. Astrologer Gautam, one of the best Indian astrologers, has extended his services to Tanzania. His expertise in palmistry and spiritual insights are now readily available, and his valuable guidance on matters related to your personal and professional life, including finances, career, and love life, can significantly enhance your overall well-being. Astrologer Gautam offers a range of astrological services, tailored to your specific needs. Find your customized solutions today!</P>
 <br>
 <br>
 <h2>Astrology services in Tanzania</h2>
-<p style="text-align:justify;">If you are looking for reliable astrologers in Tanzania, your wait is now over, with Astrologer Gautam, the best Indian astrologer providing his services. He is an excellent palm reader, jin removal, kala jadoo removal, spiritual healer and love psychic interpreter who had been decoding people's horoscope for more than two decades. With services like Black Magic Removal Services, Get Your Love Back programmes and love psychic readings, Astrologer Gautam provides a comprehensive solution to your problems. Astrologer Gautam is an expert of voodoo removal, obeah removal and Santeria removal in Tanzania. Whatever kind of service you need, you can find yours here with Astrologer Gautam.</p>
+<p style="text-align:justify;">If you're in search of dependable astrologers in Tanzania, your quest has come to an end, thanks to Astrologer Gautam, the best Indian astrologer who offers his services. He excels in palmistry, jin removal, kala jadoo removal, spiritual healing, and interpreting love psychic readings. With over two decades of experience, he has been unraveling people's horoscopes. Offering services such as Black Magic Removal Services, Get Your Love Back programs, and love psychic readings, Astrologer Gautam provides comprehensive solutions to your problems. In Tanzania, he is an expert in voodoo removal, obeah removal, and Santeria removal. Whatever service you require, you can find it here with Astrologer Gautam!</p>
 <br><br>
 <h2>Black Magic Removal Specialist Services in Tanzania</h2>
-<p style="text-align:justify;">Born out of festering negativity directed at you, instances of black magic with hexes and curses are more common than you think. While the effects may mildly sabotage your life prospects, they can also be wildly dangerous. Astrology can help thwart that kind of negativity from your life and the black magic removal services offered by Astrologer Gautam in Tanzania provides a protection against such spells. Besides helping negate dark forces at present, the service also sets you up to battle any threats posed by kala jadoo and black magic in the future. Astrologer Gautam an expert voodoo specialist due to his knowledge of all voodoo spells, obeah spells and Santeria spells remedies. Be it a service of removing black magic or helping you cope with your life, Astrologer Gautam helps you find just what you need and allows you to find a happier life.</p>
+<p style="text-align:justify;">Black magic, often stemming from envy and malevolence directed at you, can cast a dark shadow over your life. These malevolent hexes and curses can disrupt your life in various ways, from mild annoyances to serious threats. Astrologer Gautam offers black magic removal services in Tanzania, providing protection against these harmful spells. This service not only helps in dispelling existing dark forces but also strengthens your defenses against future kala jadoo and black magic threats. Astrologer Gautam is a voodoo specialist, well-versed in various voodoo spells, obeah spells, and Santeria spells remedies. Whether you seek to remove black magic or improve your overall life, Astrologer Gautam provides the solutions you need for a happier life.</p>
 <br><br>
 <h2>Love Spells and Vashikaran Specialist Services in Tanzania</h2>
-<p style="text-align:justify;">If you are concerned about the loyalty of your fiancé or the dedication of your family or even your authority over your children, the love spells and the Vashikaran specialist services are bound to be of great importance to your troubles. The love spell of Astrologer Gautam in Tanzania is bound to confirm or dispel all doubts associated with your romantic love. With the services of a Vashikaran specialist, you can ensure some semblance of control over the happenings in your life by being in control of the circumstances and the people you know. Astrologer Gautam is an expert astrologer in removing the effect of obeah spells, voodoo spells and Santeria spells. With the help of Astrologer Gautam, you can find everything you need. Rest assured that these services help you find what you need with guaranteed results.</p>
+<p style="text-align:justify;">If you're concerned about the loyalty of your partner, the harmony within your family, or your influence over your children, the love spells and Vashikaran specialist services offered by Astrologer Gautam in Tanzania can provide valuable solutions to your concerns. Astrologer Gautam's love spells can help confirm or alleviate doubts in your romantic relationship, while the services of a Vashikaran specialist offer you a degree of control over life's events and the people you encounter. Additionally, Astrologer Gautam is an expert in removing the effects of obeah spells, voodoo spells, and Santeria spells. When you choose Astrologer Gautam's services, you'll find everything you need, with guaranteed results.</p>
 <br><br>
 <h2>Get your Love Back Services in Tanzania</h2>
-<p style="text-align:justify;">This is a unique service offered by best Indian astrologer Gautam in Tanzania, which gives you the added incentive you need to get back together with the love of your life. Misunderstandings lie at the heart of all conflict and by resolving the misunderstandings, you have the chance to re-establish the relationship and get your lost love back. Whether it is a misunderstanding or something else, Astrologer Gautam helps you find a way back to your lost love.</p>
+<p style="text-align:justify;">Astrologer Gautam offers a unique service in Tanzania that can provide you with the extra push needed to reunite with the love of your life. By addressing and resolving misunderstandings, you have an opportunity to rebuild your relationship and bring your lost love back. Whether it's a misunderstanding or any other issue, Astrologer Gautam helps you find a path back to your lost love.</p>
 <br><br>
 <h2>Spiritual healers in Tanzania</h2>
-<p style="text-align:justify;">Do you feel a sense of negativity in your bones that you would like to get rid of? A spiritual healer like Astrologer Gautam can make it happen in Tanzania. Medical doctors may treat physical illnesses successfully, but only a spiritual healer can cure an anomaly in the soul. Visit Astrologer Gautam today and make sure to conduct some spiritual healing to save your soul and deep clean your aura. Professionals’ help you find the problems you are facing and help you locate the exact cause of your issue. With the help of Astrologer Gautam, you can find just what you need.
+<p style="text-align:justify;">If you sense a pervasive negativity that you wish to eliminate, consider seeking the services of a spiritual healer like Astrologer Gautam in Tanzania. While medical doctors excel at treating physical ailments, spiritual healers focus on curing imbalances in the soul. Plan a visit to Astrologer Gautam and engage in spiritual healing to rejuvenate your soul and purify your aura. Professionals in this field can help you identify the root causes of your issues and guide you towards solutions. With Astrologer Gautam's assistance, you can find the answers you seek.
 
 </p>
 
 <br><br>
 <h2>Best horoscope and Psychic Readings in Tanzania</h2>
-<p style="text-align:justify;">Love psychic reading is somewhat of a specialty of Astrologer Gautam that will allow individuals in Tanzania to consult a specialist before initiating or even committing to any relationship. He is an expert astrologer of santeria spells practised in Africa. The love psychic interpretation allows you to avoid relationships that are predicted to fail and save you a lot of heartbreak in the process. Get your readings done, ask the help of Astrologer Gautam and find accurate readings for your future.</p>
+<p style="text-align:justify;">Love psychic readings are a unique specialty of Astrologer Gautam, providing individuals in Tanzania with the opportunity to consult a specialist before embarking on or committing to a relationship. With his expertise in Santeria spells practiced in Africa, Astrologer Gautam offers love psychic interpretations that can help you avoid relationships that are predicted to fail, potentially saving you from heartbreak. Schedule your readings, seek the guidance of Astrologer Gautam, and receive accurate insights into your future.</p>
 
 
+<section class="country">
+    <center>  <h1 style="  font-size: var(--big-font);
+      font-weight: 700;">OUR SERVICES ALL OVER THE WORLD</h1></center>
+    <ul style="margin-top: 3rem;" class="Countryserviceslist image-country" id="country-list">
 
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/INDIA.html">
+              <img src="https://www.astrogautam.com/admin/flags/74113india-img.jpg" /></a>
+             <a href="/CountryImageFiles/INDIA.html">India</a>
+              </div>
+
+          </li>
+          <li class="image-country">
+              <div class="image-container">
+              <a href="/CountryImageFiles/Australia.html">
+              <img src="https://www.astrogautam.com/admin/flags/62038aus-img.jpg" /></a>
+              <a href="/CountryImageFiles/Australia.html" >Australia</a>
+          </div>
+          </li> 
+         
+          
+
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Fiji.html">
+                  <img src="https://www.astrogautam.com/admin/flags/37115fiji-img.jpg" /></a>
+                  <a href="/CountryImageFiles/Fiji.html">Fiji</a>
+              </div>
+          </li>
+          <li class="image-country">
+              <div class="image-container">
+              <a href="/CountryImageFiles/Uk.html">
+                  <img src="https://www.astrogautam.com/admin/flags/73729uk-img.jpg" /></a>
+              <a href="/CountryImageFiles/Uk.html">UK</a>
+          </div>
+          </li>
+
+          <li class="image-country">
+              <div class="image-container">
+              <a href="/CountryImageFiles/Usa.html">
+                  <img src="https://www.astrogautam.com/admin/flags/46994usa-img.jpg" /></a>
+             <a href="/CountryImageFiles/Usa.html">USA</a>
+          </div>
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Canada.html">
+                  <img src="https://www.astrogautam.com/admin/flags/47851canada-img.jpg" /></a>
+              <a href="/CountryImageFiles/Canada.html">Canada</a>
+          </div>
+
+          </li>
+          <li class="image-country">
+              <div class="image-container">
+              <a href="/CountryImageFiles/Southafrica.html">
+                  <img src="https://www.astrogautam.com/admin/flags/43869south-africa-img.jpg"/></a>
+                  <a href="/CountryImageFiles/Southafrica.html">SA</a>
+              </div>
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Newzealand.html">
+                  <img src="https://www.astrogautam.com/admin/flags/66164new-zeland-img.jpg"></a>
+      <a  href="/CountryImageFiles/Newzealand.html">NZ</a>
+  </div>
+          </li>
+
+          <li class="image-country">
+              <div class="image-container">
+              <a href="/CountryImageFiles/Oman.html">
+                  <img src="https://www.astrogautam.com/admin/flags/38724oman-img.jpg"></a>
+
+             <a href="/CountryImageFiles/Oman.html">Oman</a>
+          </div>
+
+          </li>
+
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Bangladesh.html">
+                  <img src="https://www.astrogautam.com/admin/flags/69087bangla-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Bangladesh.html">Bangladesh</a>
+          </div>
+
+          </li>
+
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Vietnam.html">
+                  <img src="https://www.astrogautam.com/admin/flags/72179viet-nam-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Vietnam.html">Vietnam</a>
+          </div>
+
+          </li>
+
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Mauritius.html">
+                  <img src="https://www.astrogautam.com/admin/flags/75667mauritius-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Mauritius.html">Mauritius</a>
+          </div>
+
+          </li>
+<!-- <br> -->
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Qatar.html">
+                  <img src="https://www.astrogautam.com/admin/flags/71141qatar-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Qatar.html">Qatar</a>
+          </div>
+
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Bahamas.html">
+                  <img src="https://www.astrogautam.com/admin/flags/61437bahamas-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Bahamas.html">Bahamas</a>
+          </div>
+
+          </li>
+
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Maldives.html">
+                  <img src="https://www.astrogautam.com/admin/flags/84675maldives-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Maldives.html">Maldives</a></div>
+          </div>
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Ghana.html">
+                  <img src="https://www.astrogautam.com/admin/flags/89695ghana-img.jpg" /></a>
+             <a href="/CountryImageFiles/Ghana.html">Ghana</a></div>
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Haiti.html">
+                  <img src="https://www.astrogautam.com/admin/flags/61233haiti-img.jpg" /></a>
+             <a href="/CountryImageFiles/Haiti.html">Haiti</a></div>
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Malasia.html">
+                  <img src="https://www.astrogautam.com/admin/flags/22794malaysia-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Malasia.html">Malaysia</a></div>
+
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+               
+              <a href="/CountryImageFiles/Pakistan.html">
+                  <img src="https://www.astrogautam.com/admin/flags/4820pakistan-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Pakistan.html">Pakistan</a></div>
+
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+                
+              <a href="/CountryImageFiles/Afghanistan.html">
+                  <img src="https://www.astrogautam.com/admin/flags/21961afghanistan-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Afghanistan.html">Afghanistan</a></div>
+
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Uae.html">
+                  <img src="https://www.astrogautam.com/admin/flags/22626uae-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Uae.html">UAE</a>
+             </div>
+
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Nepal.html">
+                  <img src="https://www.astrogautam.com/admin/flags/5949nepal-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Nepal.html">Nepal</a></div>
+
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Philippines.html">
+                  <img src="https://www.astrogautam.com/admin/flags/98975philippines-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Philippines.html">Philippines</a>
+             </div>
+
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Srilanka.html">
+                  <img src="https://www.astrogautam.com/admin/flags/4332sri-lanka-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Srilanka.html">Sri Lanka</a>
+             </div>
+
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Nigeria.html">
+                  <img src="https://www.astrogautam.com/admin/flags/76344nigeria-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Nigeria.html">Nigeria</a>
+              </div>
+
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Kenya.html">
+                  <img src="https://www.astrogautam.com/admin/flags/83616kenya-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Kenya.html">Kenya</a>
+             </div>
+
+          </li>
+        <li class="image-country" >
+          <div class="image-container">
+              <a href="/CountryImageFiles/Tanzania.html">
+                  <img src="https://www.astrogautam.com/admin/flags/78285tanzania-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Tanzania.html">Tanzania</a>
+          </div>
+
+          </li>
+          <li class="image-country" >
+              <div class="image-container">
+              <a href="/CountryImageFiles/Denmark.html">
+                  <img src="https://www.astrogautam.com/admin/flags/68929denmark-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Denmark.html">Denmark</a>
+</div>
+          </li>
+          <li class="image-country" >
+              <a href="/CountryImageFiles/Sweden.html">
+                  <img src="https://www.astrogautam.com/admin/flags/85093sweden-img.jpg" /></a>
+             <a href="/CountryImageFiles/Sweden.html">Sweden</a>
+          </li>
+          <li class="image-country" >
+              <a href="/CountryImageFiles/Netherlanda.html">
+                  <img src="https://www.astrogautam.com/admin/flags/71678Netherlands-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Netherlanda.html">Netherlands</a>
+          </li>
+          <li class="image-country" >
+              <a href="/CountryImageFiles/France.html">
+                  <img src="https://www.astrogautam.com/admin/flags/43322france-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/France.html">France</a>
+          </li>
+          <li class="image-country" >
+              <a href="/CountryImageFiles/Ireland.html">
+                  <img src="https://www.astrogautam.com/admin/flags/35837ireland-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Ireland.html">Ireland</a>
+
+          </li>
+          <li class="image-country" >
+              <a href="/CountryImageFiles/Suriname.html">
+                  <img src="https://www.astrogautam.com/admin/flags/62801suriname-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Suriname.html">Suriname</a>
+
+          </li>
+          <li class="image-country" >
+              <a href="/CountryImageFiles/Guyana.html">
+                  <img src="https://www.astrogautam.com/admin/flags/56893guyuna-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Guyana.html">Guyana</a>
+
+          </li>
+          <li class="image-country" >
+              <a href="/CountryImageFiles/Trinidad.html">
+                  <img src="https://www.astrogautam.com/admin/flags/54903trinidad-img.jpg" /></a>
+
+             <a href="/CountryImageFiles/Trinidad.html">Trinidad</a>
+
+          </li>
+          <li class="image-country" >
+              <a href="/CountryImageFiles/Grenada.html">
+                  <img src="https://www.astrogautam.com/admin/flags/35657grenada-img.jpg" /></a>
+
+              <p style="margin-left: 0.5rem;"><a href="/CountryImageFiles/Grenada.html">Grenada</a>
+
+          </li>
+          <li class="image-country" >
+              <a href="/CountryImageFiles/Stlucia.html">
+                  <img src="https://www.astrogautam.com/admin/flags/56741st-lucia-img.jpg" /></a>
+
+              <p style="margin-left: 0.5rem;"><a href="/CountryImageFiles/Stlucia.html">ST Lucia</a>
+
+          </li>
+          <li class="image-country">
+              <a href="/CountryImageFiles/Dominicanrepublic.html">
+                  <img src="https://www.astrogautam.com/admin/flags/72148dominica-republic-img.jpg" /></a>
+              <a href="/CountryImageFiles/Dominicanrepublic.html">DR</a>
+          </li>
+          <li class="image-country">
+              <a href="/CountryImageFiles/Pranama.html">
+                  <img src="https://www.astrogautam.com/admin/flags/87522panama-img.jpg" /></a>
+
+              <a href="/CountryImageFiles/Pranama.html">Pranama</a>
+
+          </li>
+          <li class="image-country">
+              <a href="/CountryImageFiles/Barbados.html">
+                  <img src="https://www.astrogautam.com/admin/flags/95518barbados-img.jpg" /></a>
+
+              <a href="/CountryImageFiles/Barbados.html">Barbados</a>
+
+          </li>
+          <li class="image-country">
+              <a href="/CountryImageFiles/puertorico.html">
+                  <img src="https://www.astrogautam.com/admin/flags/27784puerto-rico-img.jpg" /></a>
+
+              <a href="/CountryImageFiles/puertorico.html">Puerto Rico</a>
+          </li>
+          <li class="image-country">
+              <a href="/CountryImageFiles/Jamaica.html">
+                  <img src="https://www.astrogautam.com/admin/flags/19535jamaica-img.jpg" /></a>
+
+              <a href="/CountryImageFiles/Jamaica.html">Jamaica</a>
+
+
+          </li>
+        <li class="image-country">
+                  <a href="/CountryImageFiles/Singapore.html">
+                      <img src="https://www.astrogautam.com/admin/flags/89491singa-img.jpg" /></a>
+                  <a href="/CountryImageFiles/Singapore.html">Singapore</a>
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Switzerland.html">
+                      <img src="https://www.astrogautam.com/admin/flags/23310switerland-img.jpg" /></a>
+                  <a href="/CountryImageFiles/Switzerland.html">Switzerland</a>
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Spain.html">
+                      <img src="https://www.astrogautam.com/admin/flags/66307spain-img.jpg" /></a>
+
+                  <a href="/CountryImageFiles/Spain.html">Spain</a>
+
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Germany.html">
+                      <img src="https://www.astrogautam.com/admin/flags/37836germany-img.jpg" /></a>
+
+                  <a href="/CountryImageFiles/Germany.html">Germany</a>
+
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Norway.html">
+                      <img src="https://www.astrogautam.com/admin/flags/18244norway-img.jpg" /></a>
+
+                  <a href="/CountryImageFiles/Norway.html">Norway</a>
+
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Iraq.html">
+                      <img src="https://www.astrogautam.com/admin/flags/78300iraq-img.jpg" /></a>
+
+                  <a href="/CountryImageFiles/Iraq.html">Iraq</a>
+
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Italy.html">
+                      <img src="https://www.astrogautam.com/admin/flags/38589italy-flag.jpg" /></a>
+
+                  <a href="/CountryImageFiles/Italy.html">Italy</a>
+
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/ReunionIsland.html">
+                      <img src="https://www.astrogautam.com/admin/flags/20689island-flag.jpg" /></a>
+
+                  <a href="/CountryImageFiles/ReunionIsland.html">Reunion
+                      </a>
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Seychelles.html">
+                      <img src="https://www.astrogautam.com/admin/flags/21537SSeychelles.png" /></a>
+
+                  <a
+                      href="/CountryImageFiles/Seychelles.html">Seychelles</a>
+                  </p>
+
+              </li>
+              <li class="image-country"
+>
+                  <a href="/CountryImageFiles/Belgium.html">
+                      <img src="https://www.astrogautam.com/admin/flags/23792Belgium.png" /></a>
+
+                  <a
+                      href="/CountryImageFiles/Belgium.html">Belgium</a>
+                  </p>
+
+              </li>
+              <li class="image-country"
+>
+                  <a href="/CountryImageFiles/Greece.html">
+                      <img src="https://www.astrogautam.com/admin/flags/57478Greece.jpg" /></a>
+
+                  <a
+                      href="/CountryImageFiles/Greece.html">Greece</a>
+                  </p>
+
+              </li>
+              <li class="image-country"
+>
+                  <a href="/CountryImageFiles/Poland.html">
+                      <img src="https://www.astrogautam.com/admin/flags/50333poland.png" /></a>
+
+                  <a
+                      href="/CountryImageFiles/Poland.html">Poland</a>
+                  </p>
+
+              </li>
+              <li class="image-country"
+>
+                  <a href="/CountryImageFiles/Czechia.html">
+                      <img src="https://www.astrogautam.com/admin/flags/67796Czechia.png" /></a>
+
+                  <a
+                      href="/CountryImageFiles/Czechia.html">Czechia</a>
+                  </p>
+
+              </li>
+              <li class="image-country"
+>
+                  <a href="/CountryImageFiles/Austria.html">
+                      <img src="https://www.astrogautam.com/admin/flags/93203Austria.png" /></a>
+
+                  <a
+                      href="/CountryImageFiles/Austria.html">Austria</a>
+                  </p>
+
+              </li>
+              <li class="image-country"
+>
+                  <a href="/CountryImageFiles/Croatia.html">
+                      <img src="https://www.astrogautam.com/admin/flags/9630Croatia.png" /></a>
+
+                  <a
+                      href="/CountryImageFiles/Croatia.html">Croatia</a>
+                  </p>
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Romania.html">
+                      <img src="https://www.astrogautam.com/admin/flags/10326Romania.png" /></a>
+
+                  <a
+                      href="/CountryImageFiles/Romania.html">Romania</a>
+
+              </li>
+              <li class="image-country" 
+>
+                  <a href="/CountryImageFiles/Finland.html">
+                      <img src="https://www.astrogautam.com/admin/flags/32102Finland.png" /></a>
+
+                  <p style="margin-left: 0.5rem;"><a href="/CountryImageFiles/Finland.html"
+>Finland</a></p>
+
+              </li>
+              <li class="image-country" 
+>
+                  <a href="/CountryImageFiles/Ukraine.html">
+                      <img src="https://www.astrogautam.com/admin/flags/71094Ukraine.png" /></a>
+                 <a href="/CountryImageFiles/Ukraine.html"
+>Ukraine</a></p>
+
+              </li>
+                        <li class="image-country" 
+>
+                  <a href="/CountryImageFiles/Iceland.html">
+                      <img src="https://www.astrogautam.com/admin/flags/75047Iceland.png" /></a>
+                 <a href="/CountryImageFiles/Iceland.html"
+>IceLand</a></p>
+
+              </li>
+
+              <li class="image-country"
+>
+                  <a href="/CountryImageFiles/Hungary.html">
+                      <img src="https://www.astrogautam.com/admin/flags/87033Hungary.png" /></a>
+
+                 <a href="/CountryImageFiles/Hungary.html"
+>Hungary</a></p>
+
+              </li>
+
+
+              <li class="image-country"
+>
+                  <a href="/CountryImageFiles/Bulgaria.html">
+                      <img src="https://www.astrogautam.com/admin/flags/51048Bulgaria.png" /></a>
+
+                 <a href="/CountryImageFiles/Bulgaria.html"
+>Bulgaria</a></p>
+
+              </li>
+
+
+              <li class="image-country"
+>
+                  <a href="/CountryImageFiles/Luxembourg.html">
+                      <img src="https://www.astrogautam.com/admin/flags/14005Luxembourg.png" /></a>
+
+                 <a href="/CountryImageFiles/Luxembourg.html"
+>Luxembourg</a></p>
+
+              </li>
+              <li class="image-country"
+>
+                  <a href="/CountryImageFiles/Albania.html">
+                      <img src="https://www.astrogautam.com/admin/flags/23953Albania.png" /></a>
+
+                 <a href="/CountryImageFiles/Albania.html"
+>Albania</a></p>
+
+              </li>
+              <li class="image-country" 
+>
+                  <a href="/CountryImageFiles/Malta.html">
+                      <img src="https://www.astrogautam.com/admin/flags/94020Malta.png" /></a>
+
+                 <a href="/CountryImageFiles/Malta.html"
+>Malta</a></p>
+
+              </li>
+              <li class="image-country"
+>
+                  <a href="/CountryImageFiles/StVincentandtheGrenadines.html">
+                      <img src="https://www.astrogautam.com/admin/flags/70266flag-1.jpg" /></a>
+
+                 <a href="/CountryImageFiles/StVincentandtheGrenadines.html">St Vincent
+                      </a></p>
+
+              </li>
+              <li class="image-country" 
+>
+                  <a href="/CountryImageFiles/Frenchguiana.html">
+                      <img src="https://www.astrogautam.com/admin/flags/44678flag-2.jpg" /></a>
+
+                 <a href="/CountryImageFiles/Frenchguiana.html"
+>Guiana</a></p>
+
+              </li>
+              <li class="image-country"
+>
+                  <a href="/CountryImageFiles/Guadeloupe.html">
+                      <img src="https://www.astrogautam.com/admin/flags/97287Guadeloupe.png" /></a>
+
+                 <a href="/CountryImageFiles/Guadeloupe.html"
+>Guadeloupe</a></p>
+
+              </li>
+              <li class="image-country" 
+>
+                  <a href="/CountryImageFiles/Martinique.html">
+                      <img src="https://www.astrogautam.com/admin/flags/36836Martinique.png" /></a>
+
+                 <a href="/CountryImageFiles/Martinique.html"
+>Martinique</a></p>
+
+              </li>
+      
+              <li class="image-country" >
+                  <a href="/CountryImageFiles/Basseterre.html">
+                      <img src="https://www.astrogautam.com/admin/flags/7220Basseterre.png" /></a>
+
+                  <a href="/CountryImageFiles/Basseterre.html">Basseterre</a>
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Montserrat.html">
+                      <img src="https://www.astrogautam.com/admin/flags/35183Montserrat.png" /></a>
+
+                  <a href="/CountryImageFiles/Montserrat.html">Montserrat</a>
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Anguilla.html">
+                      <img src="https://www.astrogautam.com/admin/flags/3060Anguilla.png" /></a>
+                  <a href="/CountryImageFiles/Anguilla.html">Anguilla</a>
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/StKittsandNevis.html">
+                      <img src="https://www.astrogautam.com/admin/flags/10716Basseterre.png" /></a>
+
+                  <a href="/CountryImageFiles/StKittsandNevis.html">St. Kitts.</a>
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/CaymanIslands.html">
+                      <img src="https://www.astrogautam.com/admin/flags/8626flag-4.jpg" /></a>
+
+                  <a href="/CountryImageFiles/CaymanIslands.html">Cayman</a>
+
+              </li>
+
+
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Cuba.html">
+                      <img src="https://www.astrogautam.com/admin/flags/6678Cuba.png" /></a>
+
+                  <a href="/CountryImageFiles/Cuba.html">Cuba</a>
+
+              </li>
+
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Guatemala.html">
+                      <img src="https://www.astrogautam.com/admin/flags/67789Guatemala.png" /></a>
+
+                  <a href="/CountryImageFiles/Guatemala.html">Guatemala</a>
+
+              </li>
+
+              <li class="image-country">
+                  <a href="/CountryImageFiles/StPierreandMiquelon.html">
+                      <img src="https://www.astrogautam.com/admin/flags/67395flag-3.jpg" /></a>
+
+                  <a href="/CountryImageFiles/StPierreandMiquelon.html">St. Pierre.</a>
+
+              </li>
+
+              <li class="image-country">
+                  <a href="/CountryImageFiles/ELSalvador.html">
+                      <img src="https://www.astrogautam.com/admin/flags/10291flag-5.jpg" /></a>
+
+                  <a href="/CountryImageFiles/ELSalvador.html">EL Salvador</a>
+
+              </li>
+
+              <li class="image-country" ;>
+                  <a href="/CountryImageFiles/Belize.html">
+                      <img src="https://www.astrogautam.com/admin/flags/36582Belize.png" /></a>
+
+                  <a href="/CountryImageFiles/Belize.html">Belize</a>
+
+              </li>
+
+
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Nicaraga.html">
+                      <img src="https://www.astrogautam.com/admin/flags/1913Nicaragua.png" /></a>
+
+                  <a href="/CountryImageFiles/Nicaraga.html">Nicaragua</a>
+
+              </li>
+
+
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Honduras.html">
+                      <img src="https://www.astrogautam.com/admin/flags/25525Honduras.png" /></a>
+
+                  <a href="/CountryImageFiles/Honduras.html">Honduras</a>
+
+              </li>
+
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Venezuela.html">
+                      <img src="https://www.astrogautam.com/admin/flags/27808Venezuela.png" /></a>
+
+                  <a href="/CountryImageFiles/Venezuela.html">Venezuela</a>
+
+              </li>
+
+
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Colombia.html">
+                      <img src="https://www.astrogautam.com/admin/flags/28726Colombia.png" /></a>
+
+                  <a href="/CountryImageFiles/Colombia.html">Colombia</a>
+
+              </li>
+         
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Peru.html">
+                      <img src="https://www.astrogautam.com/admin/flags/13696Peru.png" /></a>
+
+                  <a href="/CountryImageFiles/Peru.html">Peru</a>
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Ecuador.html">
+                      <img src="https://www.astrogautam.com/admin/flags/89083Ecuador.png" /></a>
+
+                  <a href="/CountryImageFiles/Ecuador.html">Ecuador</a>
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Bolivia.html">
+                      <img src="https://www.astrogautam.com/admin/flags/78899Bolivia.png" /></a>
+
+                  <a href="/CountryImageFiles/Bolivia.html">Bolivia</a>
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Paraguay.html">
+                      <img src="https://www.astrogautam.com/admin/flags/28539Paraguay.png" /></a>
+                  <a href="/CountryImageFiles/Paraguay.html">Paraguay</a>
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Chile.html">
+                      <img src="https://www.astrogautam.com/admin/flags/53909Chile.png" /></a>
+                  <a href="/CountryImageFiles/Chile.html">Chile</a>
+
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Brazil.html">
+                      <img src="https://www.astrogautam.com/admin/flags/8202Brazil.png" /></a>
+                  <a href="/CountryImageFiles/Brazil.html">Brazil</a>
+
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Argentina.html">
+                      <img src="https://www.astrogautam.com/admin/flags/66253Argentina.png" /></a>
+                  <a href="/CountryImageFiles/Argentina.html">Argentina</a>
+
+              </li>
+          </ul>
+  </section>
 
 
 
@@ -114,5 +889,5 @@
 </div>
 </body>
 <script src="mixitup.min.js"></script>
-<script src="/website/demo.js"></script>
+<script src="/pages/pages.js"></script>
 </html>

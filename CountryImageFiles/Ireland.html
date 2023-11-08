@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Astrology</title>
-    <link rel="stylesheet" href="/website/demo.css">
-
+    <link rel="stylesheet" href="/demo.css">
+    <link rel="stylesheet" href="/services.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
 </head>
@@ -23,28 +23,63 @@
 </style> -->
 <body>
   
+   
     <header class="sticky">
-       
-        <div class="logo-main"><span><img class="logo" src="/website/images/logo.jpg" alt="" srcset="">
-                <span>Astrologer Some Name</span>
+
+
+        <div class="logo-main"><span><img class="logo" src="/images/logo.jpg" alt="" srcset="">
+                <span style="display: inline-block;  vertical-align: bottom; line-height: 3.5;">Astrologer Some
+                    Name</span>
+
+                <!-- <div class="logo-main"><span><img class="logo" src="/images/logo.jpg" alt="" srcset="">
+            <span style="display: inline-block; vertical-align: bottom; line-height: 3.5;">Astrologer Some Name</span> -->
+
         </div>
         <ul class="navlist" id="navlist">
-            <li> <a href="#home" style="--i:1">Home</a></li>
-            <li> <a href="pages/aboutMore.html" style="--i:2">About</a></li>
-            <li> <a href="#portfolio" style="--i:3">Services</a>
-                <ul class="dropdown-content">
-                    <li><a href="#">Service 1</a></li>
-                    <li><a href="#">Service 2</a></li>
-                    <li><a href="#">Service 3</a></li>
-                </ul></li>
-            <li> <a href="#spiritualPrayers" style="--i:4">Spiritual Prayers</a></li>
-            <li> <a href="#astrologerLocation" style="--i:5">Astrologer Location</a></li>
-            <li> <a href="#appointment" style="--i:6"> Appointment</a></li>
-            <li> <a href="#contactus" style="--i:7"> Contact Us</a></li>
+            <li><a href="/index.html" style="--i:1">Home</a></li>
+            <li><a href="/pages/aboutMore.html" style="--i:2">About</a></li>
+            <li>
+                <a href="index.html#services" id="dropdown" onmousedown="toggleDropdown()" style="--i:3">Services ▾</a>
+                <ul class="dropdown">
+                    <li><a href="/pages/palmistry.html">Palmistry</a></li>
+                    <li><a href="/pages/lovespell.html">Love Spell</a></li>
+                    <li><a href="/pages/horoscrope.html">Horoscope</a></li>
+                    <li><a href="/pages/hwdispute.html">Husband & Wife Dispute</a></li>
+
+                    <li><a href="/pages/vastu.html">Vastu Shastra</a></li>
+                    <li><a href="/pages/bmremoval.html">Black-Magic Removal</a></li>
+                </ul>
+            </li>
+            <li><a href="#" id="dropdown" onmousedown="toggleDropdown()" style="--i:4">Spiritual Prayers ▾</a>
+                <ul class="dropdown">
+                    <li><a href="/pages/spritualhealing.html">Spiritual Healing</a></li>
+                    <li><a href="/pages/voodoo.html">Voodoo Prayers</a></li>
+                    <li><a href="/pages/JaiHanumanPuja.html">Jai Hanuman Puja</a></li>
+                    <li><a href="/pages/KaliMaaPuja.html">Kali Maa Puja</a></li>
+                    <li><a href="/pages/theGayatriMantra.html">The Gayatri Mantra</a></li>
+                    <li><a href="/pages/sanishathiyagna.html">Shani Shanthi Yagna</a></li>
+                    <li><a href="/pages/manglikShantiYagna.html">Manglik Shanthi Yagna</a></li>
+                    <li><a href="/pages/kaalSarpaShant Yagna.html">Kaal Sarpa Shanthi Yagna</a></li>
+                    <li><a href="/pages/mangalaGauriYagna.html">Mangala Gauri Yagna</a></li>
+                    <li><a href="/pages/personalRudrabhishekYagna.html">Personal Rudrabhishek Yagna</a></li>
+                    <li><a href="/pages/katyaaniyagna.html">Katyaani yagna</a></li>
+                    <li><a href="/pages/personalGanpatiYagna.html">Personal Ganpati Yagna</a></li>
+                    <li><a href="/pages/MahaMrityunjayaYagna.html">Maha Mrityunjaya Yagna</a></li>
+                    <li><a href="/pages/SantanGopalYagna.html">Santan Gopal Yagna</a></li>
+                </ul>
+            </li>
+            <li><a href="#about" id="dropdown" onmousedown="toggleDropdown()" style="--i:5">Astrologer Location ▾</a>
+                <ul class="dropdown">
+                    <li><a href="/pages/california.html">California</a></li>
+                    <li><a href="/pages/usa.html">USA</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#contactus" style="--i:6">Contact Us</a></li>
         </ul>
         <div id="menu-icon" class='bx bx-menu'></div>
     </header>
-    <section class="about-content">
+    <section class="about-content" id="home">
         <section class="content_section white_section page_title has_bg_image bg_header1 enar_parallax ">
           
 <h1>Astrologer In  Ireland</h1>
@@ -53,29 +88,774 @@
 <br><br>
 <h2> Best and Famous Indian Astrologer in Ireland</h2>
 <br>
-<p style="text-align:justify;">The services of the best Indian astrologer Astrologer Gautam is now available in the country of Ireland in the northern edges of Europe. Anxiety and uncertainty about the future is a universal feeling, but the people of Ireland are at an advantage, as Astrologer gautam’s services are now accessible to them. Twenty years of experience and expertise go into his excellent advice for both professional and personal lives of an individual. His future predictions are insightful and goes a long way in ensuring a better future for anyone consulting his services in order to improve the conditions of their lives. </P>
+<p style="text-align:justify;">Astrologer Gautam, the renowned Indian astrologer, now extends his exceptional services to the beautiful country of Ireland in Northern Europe. The pervasive feelings of anxiety and uncertainty about the future are not unique to any one place, and the people of Ireland now have the privilege of accessing Astrologer Gautam's services. With two decades of experience and expertise, he provides invaluable guidance for both personal and professional aspects of life. His future predictions are profoundly insightful and offer the promise of a brighter future for those who seek his services to enhance the quality of their lives.</P>
 <br>
 <br>
 <h2>Astrology services in Ireland</h2>
-<p style="text-align:justify;">Astrology in Ireland just received a do-over with the availability of the services of Astrologer gautam, the best Indian astrologer in the field. A celebrated spiritual healer and palm reader, his services also include Black Magic Removal Specialist Services, Love Spells and Vashikaran Specialist Services, Get your Love Back Services among others. The services are effective and instantaneous solutions to all kinds of problems that any individual may face. </p>
+<p style="text-align:justify;">The realm of astrology in Ireland has been revitalized with the introduction of Astrologer Gautam's services, who is acclaimed as the finest Indian astrologer in the field. With his expertise as a renowned spiritual healer and palm reader, he offers an array of services, including Black Magic Removal Specialist Services, Love Spells, Vashikaran Specialist Services, and Get Your Love Back Services, among others. These services provide prompt and effective solutions to a wide range of issues that individuals may encounter in their lives.</p>
 <br><br>
 <h2>Black Magic Removal Specialist Services in Ireland</h2>
-<p style="text-align:justify;">Ireland is known for its elves and spirits, and dark spirits are not unknown to the land. Black magic with its curses, hexes and jinxes are born out of jealousy and hatred. Designed to cause harm, black magic is sure to ruin your future prospects, sif not generate a threat to your life. Seek out the black magic removal services of Astrologer Gautam in Ireland to rid yourself of such influences and protect yourself from such forces from becoming powerful even in future. </p>
+<p style="text-align:justify;">Ireland, famous for its folklore of elves and spirits, is not immune to the presence of dark forces. Black magic, with its curses, hexes, and jinxes, often emerges from feelings of jealousy and hatred. Crafted to inflict harm, black magic can have detrimental effects on your future and even pose a threat to your well-being. If you find yourself ensnared by the malevolent forces of black magic, turn to Astrologer Gautam's black magic removal services in Ireland. His expertise will help you break free from such influences and shield you from potential threats in the future.</p>
 <br><br>
 <h2>Love Spells and Vashikaran Specialist Services in Ireland</h2>
-<p style="text-align:justify;"> Doubts regarding the faithfulness of a lover may now be easily dispelled with the love spells services offered by Astrologer Gautam in Ireland. Vashikaran is a technique used in astrology. Vashikaran is the combination of two words “Vashi” and “Karan” . Vashi means to attract or to control somebody and karan means the technique used to control. If your troubles arise out of filial troubles, recruiting the Vashikaran Specialist Services of Astrologer Gautam are also sure to give you some semblance of control over the circumstances and people intrinsic to your life. </p>
+<p style="text-align:justify;">If you find yourself plagued by doubts about your partner's loyalty, you can now put those concerns to rest with the love spells services provided by Astrologer Gautam in Ireland. Vashikaran, a technique rooted in astrology, combines "Vashi," meaning to attract or control, with "Karan," signifying the method used for control. Whether your issues stem from family conflicts or other aspects of your life, seeking the Vashikaran Specialist Services of Astrologer Gautam will empower you with some level of influence over the circumstances and individuals that are integral to your life. </p>
 <br><br>
 <h2>Get your Love Back Services in Ireland</h2>
-<p style="text-align:justify;">Misunderstandings and conflict are often the reason behind the tearing apart of a perfectly good relationship. If you wish to salvage the situation and get your lost love back, the services of Astrologer Gautam in Ireland may be instrumental. The get your lost love back service is designed to reunite individuals with their loved ones and lead them on to a path of felicity and prosperity. </p>
+<p style="text-align:justify;">Misunderstandings and conflicts frequently lead to the unraveling of otherwise healthy relationships. If you're seeking to mend the situation and rekindle the flame of lost love, the services of Astrologer Gautam in Ireland can play a pivotal role. The "get your lost love back" service is tailored to reunite individuals with their beloved, setting them on a course towards happiness and prosperity.</p>
 <br><br>
 <h2>Spiritual healers in Ireland</h2>
-<p style="text-align:justify;">Astrologer Gautam is well known for his powers as a spiritual healer which have been now made accessible to the inhabitants of Ireland. If you ever feel the presence of dark forces in your soul, seek out Astrologer Gautam and his services. Fill your mind with positive vibes through spiritual healing sessions by Astrologer Gautam. Astrologer Gautam famous and well-known spiritual healer has helped many people in their problems related to married life, drug usage etc.  In depth spiritual healing sessions will wrench off all negative influences from your aura and make way for more positive energies. 
+<p style="text-align:justify;">Astrologer Gautam's remarkable spiritual healing abilities are now within reach of the people in Ireland. If you ever sense the grip of dark forces on your soul, turn to Astrologer Gautam and his services. Replenish your spirit with positivity through the spiritual healing sessions provided by Astrologer Gautam. A renowned and celebrated spiritual healer, Astrologer Gautam has assisted countless individuals in addressing issues related to their married life, substance use, and more. Comprehensive spiritual healing sessions are meticulously designed to rid your aura of negative influences, paving the way for an influx of positive energies.
+
+
+    <section class="country">
+        <center>  <h1 style="  font-size: var(--big-font);
+          font-weight: 700;">OUR SERVICES ALL OVER THE WORLD</h1></center>
+        <ul style="margin-top: 3rem;" class="Countryserviceslist image-country" id="country-list">
+  
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/INDIA.html">
+                  <img src="https://www.astrogautam.com/admin/flags/74113india-img.jpg" /></a>
+                 <a href="/CountryImageFiles/INDIA.html">India</a>
+                  </div>
+  
+              </li>
+              <li class="image-country">
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Australia.html">
+                  <img src="https://www.astrogautam.com/admin/flags/62038aus-img.jpg" /></a>
+                  <a href="/CountryImageFiles/Australia.html" >Australia</a>
+              </div>
+              </li> 
+             
+              
+  
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Fiji.html">
+                      <img src="https://www.astrogautam.com/admin/flags/37115fiji-img.jpg" /></a>
+                      <a href="/CountryImageFiles/Fiji.html">Fiji</a>
+                  </div>
+              </li>
+              <li class="image-country">
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Uk.html">
+                      <img src="https://www.astrogautam.com/admin/flags/73729uk-img.jpg" /></a>
+                  <a href="/CountryImageFiles/Uk.html">UK</a>
+              </div>
+              </li>
+  
+              <li class="image-country">
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Usa.html">
+                      <img src="https://www.astrogautam.com/admin/flags/46994usa-img.jpg" /></a>
+                 <a href="/CountryImageFiles/Usa.html">USA</a>
+              </div>
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Canada.html">
+                      <img src="https://www.astrogautam.com/admin/flags/47851canada-img.jpg" /></a>
+                  <a href="/CountryImageFiles/Canada.html">Canada</a>
+              </div>
+  
+              </li>
+              <li class="image-country">
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Southafrica.html">
+                      <img src="https://www.astrogautam.com/admin/flags/43869south-africa-img.jpg"/></a>
+                      <a href="/CountryImageFiles/Southafrica.html">SA</a>
+                  </div>
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Newzealand.html">
+                      <img src="https://www.astrogautam.com/admin/flags/66164new-zeland-img.jpg"></a>
+          <a  href="/CountryImageFiles/Newzealand.html">NZ</a>
+      </div>
+              </li>
+  
+              <li class="image-country">
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Oman.html">
+                      <img src="https://www.astrogautam.com/admin/flags/38724oman-img.jpg"></a>
+  
+                 <a href="/CountryImageFiles/Oman.html">Oman</a>
+              </div>
+  
+              </li>
+  
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Bangladesh.html">
+                      <img src="https://www.astrogautam.com/admin/flags/69087bangla-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Bangladesh.html">Bangladesh</a>
+              </div>
+  
+              </li>
+  
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Vietnam.html">
+                      <img src="https://www.astrogautam.com/admin/flags/72179viet-nam-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Vietnam.html">Vietnam</a>
+              </div>
+  
+              </li>
+  
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Mauritius.html">
+                      <img src="https://www.astrogautam.com/admin/flags/75667mauritius-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Mauritius.html">Mauritius</a>
+              </div>
+  
+              </li>
+  <!-- <br> -->
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Qatar.html">
+                      <img src="https://www.astrogautam.com/admin/flags/71141qatar-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Qatar.html">Qatar</a>
+              </div>
+  
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Bahamas.html">
+                      <img src="https://www.astrogautam.com/admin/flags/61437bahamas-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Bahamas.html">Bahamas</a>
+              </div>
+  
+              </li>
+  
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Maldives.html">
+                      <img src="https://www.astrogautam.com/admin/flags/84675maldives-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Maldives.html">Maldives</a></div>
+              </div>
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Ghana.html">
+                      <img src="https://www.astrogautam.com/admin/flags/89695ghana-img.jpg" /></a>
+                 <a href="/CountryImageFiles/Ghana.html">Ghana</a></div>
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Haiti.html">
+                      <img src="https://www.astrogautam.com/admin/flags/61233haiti-img.jpg" /></a>
+                 <a href="/CountryImageFiles/Haiti.html">Haiti</a></div>
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Malasia.html">
+                      <img src="https://www.astrogautam.com/admin/flags/22794malaysia-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Malasia.html">Malaysia</a></div>
+  
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                   
+                  <a href="/CountryImageFiles/Pakistan.html">
+                      <img src="https://www.astrogautam.com/admin/flags/4820pakistan-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Pakistan.html">Pakistan</a></div>
+  
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                    
+                  <a href="/CountryImageFiles/Afghanistan.html">
+                      <img src="https://www.astrogautam.com/admin/flags/21961afghanistan-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Afghanistan.html">Afghanistan</a></div>
+  
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Uae.html">
+                      <img src="https://www.astrogautam.com/admin/flags/22626uae-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Uae.html">UAE</a>
+                 </div>
+  
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Nepal.html">
+                      <img src="https://www.astrogautam.com/admin/flags/5949nepal-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Nepal.html">Nepal</a></div>
+  
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Philippines.html">
+                      <img src="https://www.astrogautam.com/admin/flags/98975philippines-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Philippines.html">Philippines</a>
+                 </div>
+  
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Srilanka.html">
+                      <img src="https://www.astrogautam.com/admin/flags/4332sri-lanka-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Srilanka.html">Sri Lanka</a>
+                 </div>
+  
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Nigeria.html">
+                      <img src="https://www.astrogautam.com/admin/flags/76344nigeria-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Nigeria.html">Nigeria</a>
+                  </div>
+  
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Kenya.html">
+                      <img src="https://www.astrogautam.com/admin/flags/83616kenya-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Kenya.html">Kenya</a>
+                 </div>
+  
+              </li>
+            <li class="image-country" >
+              <div class="image-container">
+                  <a href="/CountryImageFiles/Tanzania.html">
+                      <img src="https://www.astrogautam.com/admin/flags/78285tanzania-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Tanzania.html">Tanzania</a>
+              </div>
+  
+              </li>
+              <li class="image-country" >
+                  <div class="image-container">
+                  <a href="/CountryImageFiles/Denmark.html">
+                      <img src="https://www.astrogautam.com/admin/flags/68929denmark-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Denmark.html">Denmark</a>
+  </div>
+              </li>
+              <li class="image-country" >
+                  <a href="/CountryImageFiles/Sweden.html">
+                      <img src="https://www.astrogautam.com/admin/flags/85093sweden-img.jpg" /></a>
+                 <a href="/CountryImageFiles/Sweden.html">Sweden</a>
+              </li>
+              <li class="image-country" >
+                  <a href="/CountryImageFiles/Netherlanda.html">
+                      <img src="https://www.astrogautam.com/admin/flags/71678Netherlands-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Netherlanda.html">Netherlands</a>
+              </li>
+              <li class="image-country" >
+                  <a href="/CountryImageFiles/France.html">
+                      <img src="https://www.astrogautam.com/admin/flags/43322france-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/France.html">France</a>
+              </li>
+              <li class="image-country" >
+                  <a href="/CountryImageFiles/Ireland.html">
+                      <img src="https://www.astrogautam.com/admin/flags/35837ireland-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Ireland.html">Ireland</a>
+  
+              </li>
+              <li class="image-country" >
+                  <a href="/CountryImageFiles/Suriname.html">
+                      <img src="https://www.astrogautam.com/admin/flags/62801suriname-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Suriname.html">Suriname</a>
+  
+              </li>
+              <li class="image-country" >
+                  <a href="/CountryImageFiles/Guyana.html">
+                      <img src="https://www.astrogautam.com/admin/flags/56893guyuna-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Guyana.html">Guyana</a>
+  
+              </li>
+              <li class="image-country" >
+                  <a href="/CountryImageFiles/Trinidad.html">
+                      <img src="https://www.astrogautam.com/admin/flags/54903trinidad-img.jpg" /></a>
+  
+                 <a href="/CountryImageFiles/Trinidad.html">Trinidad</a>
+  
+              </li>
+              <li class="image-country" >
+                  <a href="/CountryImageFiles/Grenada.html">
+                      <img src="https://www.astrogautam.com/admin/flags/35657grenada-img.jpg" /></a>
+  
+                  <p style="margin-left: 0.5rem;"><a href="/CountryImageFiles/Grenada.html">Grenada</a>
+  
+              </li>
+              <li class="image-country" >
+                  <a href="/CountryImageFiles/Stlucia.html">
+                      <img src="https://www.astrogautam.com/admin/flags/56741st-lucia-img.jpg" /></a>
+  
+                  <p style="margin-left: 0.5rem;"><a href="/CountryImageFiles/Stlucia.html">ST Lucia</a>
+  
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Dominicanrepublic.html">
+                      <img src="https://www.astrogautam.com/admin/flags/72148dominica-republic-img.jpg" /></a>
+                  <a href="/CountryImageFiles/Dominicanrepublic.html">DR</a>
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Pranama.html">
+                      <img src="https://www.astrogautam.com/admin/flags/87522panama-img.jpg" /></a>
+  
+                  <a href="/CountryImageFiles/Pranama.html">Pranama</a>
+  
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Barbados.html">
+                      <img src="https://www.astrogautam.com/admin/flags/95518barbados-img.jpg" /></a>
+  
+                  <a href="/CountryImageFiles/Barbados.html">Barbados</a>
+  
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/puertorico.html">
+                      <img src="https://www.astrogautam.com/admin/flags/27784puerto-rico-img.jpg" /></a>
+  
+                  <a href="/CountryImageFiles/puertorico.html">Puerto Rico</a>
+              </li>
+              <li class="image-country">
+                  <a href="/CountryImageFiles/Jamaica.html">
+                      <img src="https://www.astrogautam.com/admin/flags/19535jamaica-img.jpg" /></a>
+  
+                  <a href="/CountryImageFiles/Jamaica.html">Jamaica</a>
+  
+  
+              </li>
+            <li class="image-country">
+                      <a href="/CountryImageFiles/Singapore.html">
+                          <img src="https://www.astrogautam.com/admin/flags/89491singa-img.jpg" /></a>
+                      <a href="/CountryImageFiles/Singapore.html">Singapore</a>
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Switzerland.html">
+                          <img src="https://www.astrogautam.com/admin/flags/23310switerland-img.jpg" /></a>
+                      <a href="/CountryImageFiles/Switzerland.html">Switzerland</a>
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Spain.html">
+                          <img src="https://www.astrogautam.com/admin/flags/66307spain-img.jpg" /></a>
+  
+                      <a href="/CountryImageFiles/Spain.html">Spain</a>
+  
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Germany.html">
+                          <img src="https://www.astrogautam.com/admin/flags/37836germany-img.jpg" /></a>
+  
+                      <a href="/CountryImageFiles/Germany.html">Germany</a>
+  
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Norway.html">
+                          <img src="https://www.astrogautam.com/admin/flags/18244norway-img.jpg" /></a>
+  
+                      <a href="/CountryImageFiles/Norway.html">Norway</a>
+  
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Iraq.html">
+                          <img src="https://www.astrogautam.com/admin/flags/78300iraq-img.jpg" /></a>
+  
+                      <a href="/CountryImageFiles/Iraq.html">Iraq</a>
+  
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Italy.html">
+                          <img src="https://www.astrogautam.com/admin/flags/38589italy-flag.jpg" /></a>
+  
+                      <a href="/CountryImageFiles/Italy.html">Italy</a>
+  
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/ReunionIsland.html">
+                          <img src="https://www.astrogautam.com/admin/flags/20689island-flag.jpg" /></a>
+  
+                      <a href="/CountryImageFiles/ReunionIsland.html">Reunion
+                          </a>
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Seychelles.html">
+                          <img src="https://www.astrogautam.com/admin/flags/21537SSeychelles.png" /></a>
+  
+                      <a
+                          href="/CountryImageFiles/Seychelles.html">Seychelles</a>
+                      </p>
+  
+                  </li>
+                  <li class="image-country"
+    >
+                      <a href="/CountryImageFiles/Belgium.html">
+                          <img src="https://www.astrogautam.com/admin/flags/23792Belgium.png" /></a>
+  
+                      <a
+                          href="/CountryImageFiles/Belgium.html">Belgium</a>
+                      </p>
+  
+                  </li>
+                  <li class="image-country"
+    >
+                      <a href="/CountryImageFiles/Greece.html">
+                          <img src="https://www.astrogautam.com/admin/flags/57478Greece.jpg" /></a>
+  
+                      <a
+                          href="/CountryImageFiles/Greece.html">Greece</a>
+                      </p>
+  
+                  </li>
+                  <li class="image-country"
+    >
+                      <a href="/CountryImageFiles/Poland.html">
+                          <img src="https://www.astrogautam.com/admin/flags/50333poland.png" /></a>
+  
+                      <a
+                          href="/CountryImageFiles/Poland.html">Poland</a>
+                      </p>
+  
+                  </li>
+                  <li class="image-country"
+    >
+                      <a href="/CountryImageFiles/Czechia.html">
+                          <img src="https://www.astrogautam.com/admin/flags/67796Czechia.png" /></a>
+  
+                      <a
+                          href="/CountryImageFiles/Czechia.html">Czechia</a>
+                      </p>
+  
+                  </li>
+                  <li class="image-country"
+    >
+                      <a href="/CountryImageFiles/Austria.html">
+                          <img src="https://www.astrogautam.com/admin/flags/93203Austria.png" /></a>
+  
+                      <a
+                          href="/CountryImageFiles/Austria.html">Austria</a>
+                      </p>
+  
+                  </li>
+                  <li class="image-country"
+    >
+                      <a href="/CountryImageFiles/Croatia.html">
+                          <img src="https://www.astrogautam.com/admin/flags/9630Croatia.png" /></a>
+  
+                      <a
+                          href="/CountryImageFiles/Croatia.html">Croatia</a>
+                      </p>
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Romania.html">
+                          <img src="https://www.astrogautam.com/admin/flags/10326Romania.png" /></a>
+  
+                      <a
+                          href="/CountryImageFiles/Romania.html">Romania</a>
+  
+                  </li>
+                  <li class="image-country" 
+    >
+                      <a href="/CountryImageFiles/Finland.html">
+                          <img src="https://www.astrogautam.com/admin/flags/32102Finland.png" /></a>
+  
+                      <p style="margin-left: 0.5rem;"><a href="/CountryImageFiles/Finland.html"
+  >Finland</a></p>
+  
+                  </li>
+                  <li class="image-country" 
+    >
+                      <a href="/CountryImageFiles/Ukraine.html">
+                          <img src="https://www.astrogautam.com/admin/flags/71094Ukraine.png" /></a>
+                     <a href="/CountryImageFiles/Ukraine.html"
+  >Ukraine</a></p>
+  
+                  </li>
+                            <li class="image-country" 
+    >
+                      <a href="/CountryImageFiles/Iceland.html">
+                          <img src="https://www.astrogautam.com/admin/flags/75047Iceland.png" /></a>
+                     <a href="/CountryImageFiles/Iceland.html"
+  >IceLand</a></p>
+  
+                  </li>
+  
+                  <li class="image-country"
+    >
+                      <a href="/CountryImageFiles/Hungary.html">
+                          <img src="https://www.astrogautam.com/admin/flags/87033Hungary.png" /></a>
+  
+                     <a href="/CountryImageFiles/Hungary.html"
+  >Hungary</a></p>
+  
+                  </li>
+  
+  
+                  <li class="image-country"
+    >
+                      <a href="/CountryImageFiles/Bulgaria.html">
+                          <img src="https://www.astrogautam.com/admin/flags/51048Bulgaria.png" /></a>
+  
+                     <a href="/CountryImageFiles/Bulgaria.html"
+  >Bulgaria</a></p>
+  
+                  </li>
+  
+  
+                  <li class="image-country"
+    >
+                      <a href="/CountryImageFiles/Luxembourg.html">
+                          <img src="https://www.astrogautam.com/admin/flags/14005Luxembourg.png" /></a>
+  
+                     <a href="/CountryImageFiles/Luxembourg.html"
+  >Luxembourg</a></p>
+  
+                  </li>
+                  <li class="image-country"
+    >
+                      <a href="/CountryImageFiles/Albania.html">
+                          <img src="https://www.astrogautam.com/admin/flags/23953Albania.png" /></a>
+  
+                     <a href="/CountryImageFiles/Albania.html"
+  >Albania</a></p>
+  
+                  </li>
+                  <li class="image-country" 
+    >
+                      <a href="/CountryImageFiles/Malta.html">
+                          <img src="https://www.astrogautam.com/admin/flags/94020Malta.png" /></a>
+  
+                     <a href="/CountryImageFiles/Malta.html"
+  >Malta</a></p>
+  
+                  </li>
+                  <li class="image-country"
+    >
+                      <a href="/CountryImageFiles/StVincentandtheGrenadines.html">
+                          <img src="https://www.astrogautam.com/admin/flags/70266flag-1.jpg" /></a>
+  
+                     <a href="/CountryImageFiles/StVincentandtheGrenadines.html">St Vincent
+                          </a></p>
+  
+                  </li>
+                  <li class="image-country" 
+    >
+                      <a href="/CountryImageFiles/Frenchguiana.html">
+                          <img src="https://www.astrogautam.com/admin/flags/44678flag-2.jpg" /></a>
+  
+                     <a href="/CountryImageFiles/Frenchguiana.html"
+  >Guiana</a></p>
+  
+                  </li>
+                  <li class="image-country"
+    >
+                      <a href="/CountryImageFiles/Guadeloupe.html">
+                          <img src="https://www.astrogautam.com/admin/flags/97287Guadeloupe.png" /></a>
+  
+                     <a href="/CountryImageFiles/Guadeloupe.html"
+  >Guadeloupe</a></p>
+  
+                  </li>
+                  <li class="image-country" 
+    >
+                      <a href="/CountryImageFiles/Martinique.html">
+                          <img src="https://www.astrogautam.com/admin/flags/36836Martinique.png" /></a>
+  
+                     <a href="/CountryImageFiles/Martinique.html"
+  >Martinique</a></p>
+  
+                  </li>
+          
+                  <li class="image-country" >
+                      <a href="/CountryImageFiles/Basseterre.html">
+                          <img src="https://www.astrogautam.com/admin/flags/7220Basseterre.png" /></a>
+  
+                      <a href="/CountryImageFiles/Basseterre.html">Basseterre</a>
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Montserrat.html">
+                          <img src="https://www.astrogautam.com/admin/flags/35183Montserrat.png" /></a>
+  
+                      <a href="/CountryImageFiles/Montserrat.html">Montserrat</a>
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Anguilla.html">
+                          <img src="https://www.astrogautam.com/admin/flags/3060Anguilla.png" /></a>
+                      <a href="/CountryImageFiles/Anguilla.html">Anguilla</a>
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/StKittsandNevis.html">
+                          <img src="https://www.astrogautam.com/admin/flags/10716Basseterre.png" /></a>
+  
+                      <a href="/CountryImageFiles/StKittsandNevis.html">St. Kitts.</a>
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/CaymanIslands.html">
+                          <img src="https://www.astrogautam.com/admin/flags/8626flag-4.jpg" /></a>
+  
+                      <a href="/CountryImageFiles/CaymanIslands.html">Cayman</a>
+  
+                  </li>
+  
+  
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Cuba.html">
+                          <img src="https://www.astrogautam.com/admin/flags/6678Cuba.png" /></a>
+  
+                      <a href="/CountryImageFiles/Cuba.html">Cuba</a>
+  
+                  </li>
+  
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Guatemala.html">
+                          <img src="https://www.astrogautam.com/admin/flags/67789Guatemala.png" /></a>
+  
+                      <a href="/CountryImageFiles/Guatemala.html">Guatemala</a>
+  
+                  </li>
+  
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/StPierreandMiquelon.html">
+                          <img src="https://www.astrogautam.com/admin/flags/67395flag-3.jpg" /></a>
+  
+                      <a href="/CountryImageFiles/StPierreandMiquelon.html">St. Pierre.</a>
+  
+                  </li>
+  
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/ELSalvador.html">
+                          <img src="https://www.astrogautam.com/admin/flags/10291flag-5.jpg" /></a>
+  
+                      <a href="/CountryImageFiles/ELSalvador.html">EL Salvador</a>
+  
+                  </li>
+  
+                  <li class="image-country" ;>
+                      <a href="/CountryImageFiles/Belize.html">
+                          <img src="https://www.astrogautam.com/admin/flags/36582Belize.png" /></a>
+  
+                      <a href="/CountryImageFiles/Belize.html">Belize</a>
+  
+                  </li>
+  
+  
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Nicaraga.html">
+                          <img src="https://www.astrogautam.com/admin/flags/1913Nicaragua.png" /></a>
+  
+                      <a href="/CountryImageFiles/Nicaraga.html">Nicaragua</a>
+  
+                  </li>
+  
+  
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Honduras.html">
+                          <img src="https://www.astrogautam.com/admin/flags/25525Honduras.png" /></a>
+  
+                      <a href="/CountryImageFiles/Honduras.html">Honduras</a>
+  
+                  </li>
+  
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Venezuela.html">
+                          <img src="https://www.astrogautam.com/admin/flags/27808Venezuela.png" /></a>
+  
+                      <a href="/CountryImageFiles/Venezuela.html">Venezuela</a>
+  
+                  </li>
+  
+  
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Colombia.html">
+                          <img src="https://www.astrogautam.com/admin/flags/28726Colombia.png" /></a>
+  
+                      <a href="/CountryImageFiles/Colombia.html">Colombia</a>
+  
+                  </li>
+             
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Peru.html">
+                          <img src="https://www.astrogautam.com/admin/flags/13696Peru.png" /></a>
+  
+                      <a href="/CountryImageFiles/Peru.html">Peru</a>
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Ecuador.html">
+                          <img src="https://www.astrogautam.com/admin/flags/89083Ecuador.png" /></a>
+  
+                      <a href="/CountryImageFiles/Ecuador.html">Ecuador</a>
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Bolivia.html">
+                          <img src="https://www.astrogautam.com/admin/flags/78899Bolivia.png" /></a>
+  
+                      <a href="/CountryImageFiles/Bolivia.html">Bolivia</a>
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Paraguay.html">
+                          <img src="https://www.astrogautam.com/admin/flags/28539Paraguay.png" /></a>
+                      <a href="/CountryImageFiles/Paraguay.html">Paraguay</a>
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Chile.html">
+                          <img src="https://www.astrogautam.com/admin/flags/53909Chile.png" /></a>
+                      <a href="/CountryImageFiles/Chile.html">Chile</a>
+  
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Brazil.html">
+                          <img src="https://www.astrogautam.com/admin/flags/8202Brazil.png" /></a>
+                      <a href="/CountryImageFiles/Brazil.html">Brazil</a>
+  
+                  </li>
+                  <li class="image-country">
+                      <a href="/CountryImageFiles/Argentina.html">
+                          <img src="https://www.astrogautam.com/admin/flags/66253Argentina.png" /></a>
+                      <a href="/CountryImageFiles/Argentina.html">Argentina</a>
+  
+                  </li>
+              </ul>
+      </section>
+
+
 
 </p>
 
 <br><br>
 <h2>Best horoscope and Psychic Readings in Ireland</h2>
-<p style="text-align:justify;">Astrologer Gautam is a world renowned love psychic reader whose services are now available in the country of Ireland in Europe. The failings and shortcomings of a relationship are obvious to a love psychic reader who conveys the same to the individual before he or she has committed t it fully. Couples who are getting ready to marry can have their horoscopes and kundalis matched by Astrologer Gautam. Astrologer Gautam is an expert tarot reader, love psychic reader, horoscope reader who help people with his astrological services in Ireland. This can go a long way in avoiding potentially toxic relationships, and also heartbreak and emotional trauma. </p>
+<p style="text-align:justify;"> Astrologer Gautam, a globally renowned love psychic reader, now extends his services to Ireland in Europe. With a keen understanding of relationship dynamics, a love psychic reader like Astrologer Gautam can identify the flaws and limitations within a relationship, allowing individuals to make informed decisions before fully committing. For couples preparing for marriage, Astrologer Gautam offers the service of matching their horoscopes and kundalis, drawing on his expertise as an astrologer, tarot reader, and love psychic reader. These services are invaluable in preventing potentially detrimental relationships and sparing individuals from heartbreak and emotional distress.</p>
 
 
 
@@ -114,5 +894,5 @@
 </div>
 </body>
 <script src="mixitup.min.js"></script>
-<script src="/website/demo.js"></script>
+<script src="/pages/pages.js"></script>
 </html>
