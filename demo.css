@@ -1621,3 +1621,40 @@ li{
         margin-bottom: 5px;
     }
 }
+/* styles.css */
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.testimonial img {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    border-radius: 50%; /* Create a circular image */
+    margin-bottom: 10px;
+}
+
+.testimonial-content p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.testimonial-content p:first-child {
+    font-weight: bold;
+}
+
+.testimonial-content p:nth-child(2) {
+    color: #555;
+    font-style: italic;
+}
+
+/* Add more CSS styles as needed for colors, fonts, and layout */

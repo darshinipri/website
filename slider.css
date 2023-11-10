@@ -18,17 +18,20 @@
     display: flex;
     width: 3200px;
     transition: 0.5s;
+   
 }
 .slide-col{
     width: 800px;
     height: 260px;
     position: relative;
+ 
 }
 .user-img{
     position: absolute;
     top: 0;
     right: 0;
     height: 100%;
+    
 
 }
 .user-img img{
@@ -38,16 +41,17 @@ border-radius: 10px;
 .user-text{
     background:var(--bg-color);
     width: 520px;
-    height: 270px;
+    height: 370px;
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 70%;
     transform: translateY(-50%);
     border-radius: 10px;
     color: aqua;
     padding: 44px;
     box-sizing: border-box;
     z-index: 2;
+    
 }
 .container{
     width: 800px;
@@ -56,6 +60,7 @@ border-radius: 10px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
 }
 .indicator{
     position: absolute;
@@ -77,7 +82,82 @@ border-radius: 10px;
     width: 40px;
 }
 .testimonial{
+    height: 250px;
     width: 100%;
     height: 100%;
     overflow: hidden;
 }
+@media (max-width: 420px){
+ 
+    .user-text {
+        margin-left: 9rem;
+        width: rem;
+        height: auto; /* Allow user text container to expand based on content */
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .user-img {
+        position: static; /* Remove absolute positioning */
+        width: 80%; /* Adjust the width to make it responsive */
+        max-width: 300px; /* Limit the maximum width for larger screens */
+        margin: 0 auto; /* Center the image horizontally */
+    }
+
+    .indicator {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -50px;
+    }
+    
+    .btn {
+        width: 10px; /* Adjust button size for smaller screens */
+        height: 10px;
+        margin: 4px;
+        border-radius: 10px;
+    }
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
