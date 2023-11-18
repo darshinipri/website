@@ -1,0 +1,47 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* h1{
+    /* width: 100%; */
+    /* removed horizontal scroll bar */
+    /* margin: 0 auto;
+    background: #000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+} */ 
+
+.countries{
+    max-width: 1240px;
+    margin-left: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* gap: 20px; */
+}
+.country-div{
+    /* background: #c5e7f5; */
+    /* border: 1px solid burlywood; */
+    margin: 10px;
+    /* padding: 15px; */
+}
+#countryimg{
+    width: 50%;
+    height: 50px;
+    display: block; /* Ensures that the margin property works properly */
+    margin-left: auto;
+    margin-right: auto;
+}
+h5{
+  color: white;
+    text-align: center;
+}
+
+/* now do styles as much as you want */
+/* add media query for responsive */
+@media screen and (max-width: 576px){
+    .countries{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
